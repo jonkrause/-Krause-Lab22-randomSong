@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+#mainCont {
+    text-align: center;
+    display: inline-block;
+}
+
+#artist {
+    display: inline-block;
+    width: 600px;
+    font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#song {
+    font-size: 38px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+
+#year {
+    font-size: 20px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+#lyrics {
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "standard",
+  "rules": {
+	"one-var": "off",
+	"no-tabs": "off",
+	"no-useless-escape": "off",
+	"no-new-func": "off"
+  }
+}

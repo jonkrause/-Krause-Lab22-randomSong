@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='lyricMod'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lyricShit</title>
+
+    <link rel="stylesheet" href="ng-embed.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
+    </style>
+
+</head>
+
+<body ng-controller='lyricCtrl'>
+
+
+    <div id="mainCont">
+        <div id="artist">{{ randSong.artist }}</div>
+        <div ng-init="neImageLong=false" ng-class="{false:'ne-image', true:'ne-image ne-image-long'}[neImageLong]" ng-if="image.url" class="ng-scope ne-image">
+            <div class="ne-image-wrapper">
+                <img ng-src="{{image.url}}" ng-click="neImageLong=!neImageLong" alt="" />
+            </div>
+        </div>
+        <div class="ne-audio" ng-if="audio.url">
+            <audio ng-src="{{audio.url}}" controls></audio>
+        </div>
+        <div id="song">{{ randSong.songName }}</div>
+        <div id="year">({{ randSong.year }})</div>
+        <div id="lyrics" ng-bind-html="lyricObj01"></div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-embed/2.2.0/ng-embed.min.js"></script>
+    <script src="script.js"></script>
+    <script src="lyricJS.js"></script>
+
+</body>
+
+</html>
